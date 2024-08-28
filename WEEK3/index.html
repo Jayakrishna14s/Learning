@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEEK-3</title>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+        
+        #login_page {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(255, 128, 82)  ;
+            border-radius: 10px;
+            display: block;
+            position: absolute;
+            
+            width: 300px;
+            text-align: center;
+            height: auto;
+            left : 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        #login_page:hover{
+            transform: scale(1.02) translate(-50%, -50%);
+        }
+
+        #login_page > div{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            width: 80px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login_page">
+        <h4>LOGIN PAGE</h4>
+        <div>
+            <button onclick="window.location.href = 'signup.html'">SIGN UP</button>
+            <button onclick="window.location.href = 'signin.html'">SIGN IN</button>
+        </div>
+    </div>
+</body>
+</html>

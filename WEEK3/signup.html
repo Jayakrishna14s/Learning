@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGNUP</title>
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        form {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid orangered;
+            border-radius: 10px;;
+            display: block;
+            position: absolute;
+            width: 500px;
+            left : 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <form align="center">
+        <fieldset>
+            <legend> Sign In</legend>
+            <br>
+            <label for="Username">Username</label>&nbsp;&nbsp;&nbsp;
+            <input placeholder="Username" type="text"><br><br>
+            <label for="Email">Email ID</label>&nbsp;&nbsp;&nbsp;
+            <input placeholder="Email" type="email"><br><br>
+            <label for="Password">Password</label>&nbsp;&nbsp;
+            <input placeholder="Password" type="password"><br><br>
+            <label for="Cell Number">Cell Number</label>&nbsp;&nbsp;&nbsp;
+            <input placeholder="CellNumber" type="CellNumber"><br><br>
+           
+
+            
+            Address:
+            <textarea row="5" col = "22"></textarea>
+            <br><br>
+
+            District:&nbsp;&nbsp;&nbsp;
+            <select>
+                <option value = "Hyderabad" selected>hyderabad</option>
+                <option value = "Warangal" selected>Warangal</option>
+                <option value = "Karimnagar" selected>Karimnagar</option>
+                <option value = "Nalgonda" selected>Nalgonda</option>
+                <option value = "Nizambad" selected>Nizambad</option>
+            </select>
+
+            <br>
+            <br>
+
+            Gender: 
+            <input type="radio" name="Gender"> Male&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Gender"> Female&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Gender"> Others&nbsp;&nbsp;&nbsp;
+            <br><br>
+
+
+            Languages known:
+            <input type="checkbox" name="Languages">Telugu&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="Languages">Telugu&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="Languages">Telugu&nbsp;&nbsp;&nbsp;
+
+            <br><br><br>
+            <button onclick="event.preventDefault(); window.location.href = 'signin.html'" >SIGN UP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button>
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
